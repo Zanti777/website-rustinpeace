@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+     <title>Rust In Peace</title>
+     <link rel="stylesheet" href="style.css"> 
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/f51fd84a2a.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head> 
+<body>
+<section class="sub-header">
+        <nav> 
+            <a href="index.html"><img src="images/logo.png"></a>   
+            <div class="nav-links" id="navLinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#home">Home</a>
+                    <li><a href="#minting">Minting</a>
+                    <li><a href="#community">Community</a>
+                    <li><a href="#explore NFTs">Explore NFTs</a> 
+                    <li><a href="#about">About</a>
+                </ul>
+            </div> 
+                <div class="social-links">
+                    <a href="index.hmtl"><img src="images/discord.png" alt="discord" class="social"></a>
+                    <a href="index.hmtl"><img src="images/instagram.png" alt="instagram" class="social"></a>
+                    <a href="index.hmtl"><img src="images/twitter.png" alt="twitter" class="social"></a>
+                </div>  
+              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+          </nav> 
+          <h1>Explore NFTs</h1>
+
+</section>
+
+     <!------- Explore NFTs ------> 
+    
+  <section class="upcoming">
+     
+    <div class="explore">
+     <div class="explore-col">
+          <img id= "ed1" src="images/ed1.png"> 
+          <div class="layer1">
+              <h3>EDITION 1<br>'Life Bulb'<br><br><a href="" class="buy-btn">BUY</a></h3>
+               <p3>"Life Bulb" explores the theme of nature reclaiming the earth from technology. The piece, is a digitally painted image of a light bulb with a small ecosystem of mushrooms growing inside of it. Life growing over the remains of the technological structure symbolizes a return to balance between humanity and the natural world inviting viewers to consider the relationship between mankind and the environment. It is sure to resonate with anyone interested in the intersection of technology and nature. 
+              </p3>
+              
+       </div>
+    </div> 
+     <div class="explore-col">
+        <img id= "ed2" src="images/ed2.png"> 
+          <div class="layer1">
+              <h3>EDITION 2<br>'Eco Chamber'<br><br><a href="" class="buy-btn">BUY</a></h3>
+               <p3>"Eco Chamber" is a thought-provoking digital artwork that delves into the theme of nature reclaiming the earth from technology. The piece, rendered in digital paint, portrays an aged and rusted gas cylinder which holds within it a serene and picturesque waterfall. The imagery of nature flourishing in the remnants of technology symbolizes the potential for balance between humanity and the natural world. The artwork invites the viewer to reflect on the relationship between mankind and the environment, and the possibility for harmony between the two. It is sure to resonate with anyone interested in the intersection of technology and nature. 
+              </p3>
+       </div>
+       </div>
+        <div class="explore-col">
+        <img id= "ed3" src="images/ed3.png"> 
+          <div class="layer1">
+              <h3>EDITION 3<br>'Sun Dial'<br><br><a href="" class="buy-btn">BUY</a></h3>
+               <p3>"Sun Dial" is a thought-provoking digital artwork that explores the theme of time and our place in the universe. The piece, rendered in digital paint, portrays a broken watch with the entire solar system housed within it. The imagery of the solar system in the place of a timekeeping device symbolizes our insignificance in the grand scheme of things. The artwork invites the viewer to reflect on the meaning of time and our place in the universe.
+               </p3>
+       </div>
+       </div>
+        <div class="explore-col">
+        <img id= "ed4" src="images/ed4.png"> 
+          <div class="layer1">
+              <h3>EDITION 4<br>'Masquerade'<br><br><a href="" class="buy-btn">BUY</a></h3>
+               <p3> "Masquerade" is a digital artwork that delves into the themes of war, technology, and nature. The imagery of the gas mask, a symbol of war and destruction, being transformed by nature symbolizes the possibility of redemption and the power of nature to heal. The artwork invites the viewer to consider the impact of war on the environment and the potential for a harmonious coexistence between humanity and nature. The title of the artwork, "Masquerade" alludes to the idea of something hiding behind a facade, and in this case, the gas mask is acting as a facade hiding the beauty of the nature in it.
+               </p3>
+       </div>
+       </div>    
+    </div>  
+</section>   
+    
+      
+
+    
+    
+    
+    
+    
+ <!------- Footer ------> 
+    
+<section class="footer">
+         <h4>About Us</h4>
+    <p2>Rust In Peace NFT collectibles on the Cardano Blockchain</p2>
+    
+    </section>   
+    
+
+ 
+<!--------JavaScript for Toggle Menu------>    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+</style>
+    
+<script>
+    var navLinks = document.getElementById("navLinks")
+    
+    function showMenu(){
+        navLinks.style.right = "0";
+    }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
+</script>
+   
+<script>
+        // Array to store the image URLs for element "ed1"
+        var images = ["images/ed1.png", "images/ed1-2.png", "images/ed1-3.png", "images/ed1-4.png", "images/ed1-5.png"];
+        // Counter variable to keep track of the current image for element "ed1"
+        var currentImage = 0;
+
+        // Array to store the image URLs for element "ed2"
+        var images1 = ["images/ed2.png", "images/ed2-2.png", "images/ed2-3.png", "images/ed2-4.png", "images/ed2-5.png"];
+        // Counter variable to keep track of the current image for element "ed2"
+        var currentImage1 = 0;
+    
+        // Array to store the image URLs for element "ed3"
+        var images2 = ["images/ed3.png", "images/ed3-2.png", "images/ed3-3.png", "images/ed3-4.png", "images/ed3-5.png"];
+        // Counter variable to keep track of the current image for element "ed3"
+        var currentImage2 = 0;
+    
+        // Array to store the image URLs for element "ed4"
+        var images3 = ["images/ed4.png", "images/ed4-1.png", "images/ed4-2.png", "images/ed4-3.png", "images/ed4-4.png"];
+        // Counter variable to keep track of the current image for element "ed4"
+        var currentImage3 = 0;
+    
+    // Function to update the image source and increment the counter for element "ed1"
+    function updateImage() {
+        $("#ed1").attr("src", images[currentImage]);
+        currentImage = (currentImage + 1) % images.length;
+}
+    // Function to update the image source and increment the counter for element "ed2"
+    function updateImage1() {
+        $("#ed2").attr("src", images1[currentImage1]);
+    currentImage1 = (currentImage1 + 1) % images1.length;
+}
+    // Function to update the image source and increment the counter for element "ed3"
+    function updateImage2() {
+        $("#ed3").attr("src", images2[currentImage2]);
+    currentImage2 = (currentImage2 + 1) % images2.length;
+}
+    // Function to update the image source and increment the counter for element "ed4"
+    function updateImage3() {
+        $("#ed4").attr("src", images3[currentImage3]);
+    currentImage3 = (currentImage3 + 1) % images3.length;
+}
+      $(document).ready(function() {
+        setInterval(updateImage, 2000);
+        setInterval(updateImage1, 2000);
+        setInterval(updateImage2, 2000); 
+        setInterval(updateImage3, 2000);   
+      });
+</script>
+    
+</body>
+</html>
