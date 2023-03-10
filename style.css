@@ -4,6 +4,7 @@
 }
 body {
     background-color: black;
+    background: linear-gradient(to bottom, black,90%, rgb(89,76,1));
     background-size: cover;
     background-position: center;
     position: relative;
@@ -83,7 +84,7 @@ nav img{
     box-shadow: 0 0 10px 5px rgba(255,215,0,0.4)  
 }
 .text-box{
-    width: 80%;
+    width: 70%;
     color: #fff;
     position: absolute;
     top: 50%;
@@ -162,7 +163,7 @@ nav i{
     box-shadow: 0 0 10px 5px rgba(255,215,0,0.4) 
     }
     .text-box{
-    margin-top: 50px;
+    margin-top: 150px;
     }
     .text-box h1{
         font-size: 20px;
@@ -219,7 +220,7 @@ nav i{
 }
 h1{
     color:white;
-    font-size: 36px;
+    font-size: 42px;
     font-weight: 600;
     font-family:'Amatic SC', cursive;
 }
@@ -245,6 +246,10 @@ p{
     padding: 20px 12px;
     box-sizing: border-box;
     transition: 0.2s;
+}
+.collection-col a {
+  text-decoration: none;
+  color: black;
 }
 h3{
     text-align: center;
@@ -274,7 +279,7 @@ h3{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding-top: 200px;
 } 
 .upcoming-col{
     flex-basis: 32%;
@@ -299,6 +304,11 @@ h3{
 .layer:hover{
     background: rgba(255,215,0,0.4);
 }
+p3{
+    font-family: 'Special Elite', cursive;
+    font-size: 42px;
+    color: rgb(156,122,44);
+}
 .layer h3{
     width:100%;
     color: white;
@@ -318,7 +328,7 @@ h3{
 /*----- Join the Community ----*/   
 
 .join{
-    margin: 40px auto;
+    margin: 300px auto;
     width: 80%;
     background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.7)),url(images/banner.png);
     background-position: center;
@@ -330,7 +340,19 @@ h3{
 .social-links2 {
     display: none;
 }
-    
+
+@media(max-width: 800px){
+    .row{
+    flex-direction: column;
+    }
+    .collection-col{
+    flex-basis: 100%;
+    }
+    .roles-right span{
+    font-size: 12px;
+    color: white
+    }
+}
 /*----- Footer -----*/
 
 
@@ -359,7 +381,7 @@ p2{
 .sub-header{
     height: 50vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/forest.png);
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/banner.png);
     background-position: center;
     background-size: cover;
     text-align: center;
@@ -432,7 +454,7 @@ p2{
 
 .explore-col h3{
     width: 20%;
-    height: 180px;
+    height: 170px;
     color: white;
     font-size: 26px;
     bottom: 0;
@@ -446,7 +468,7 @@ p2{
     background: rgba(15,15,15,0.5);
 }
 .explore-col:hover h3{
-    bottom: 60%;
+    bottom: 50%;
     opacity: 1;
 }
 
@@ -456,7 +478,7 @@ p2{
     font-size: 20px;
     font-weight: 400;
     color: white;
-    bottom: 40%;
+    bottom: 30%;
     left: 60%;
     transform: translateX(-88%);
     position: absolute;
@@ -490,27 +512,133 @@ p2{
 }
 
 @media(max-width: 800px){
+    .explore{
+    width: 100%;
+    padding-top: 0px;
+    }
     .explore-col img{
     width: 100%;
     display: block;
-}
+    }
     .explore-col p3{
     display: none;
-}
+    }
     .explore-col h3{
     width: 100%;
     height: 80px;      
     font-size: 15px;   
     left: 50%;
     transform: translateX(-50%);   
-}
+    }
     .explore-col:hover h3{    
     bottom: 60%;  
     opacity: 1;
     background: transparent;      
+    }
 }
+/*------- Minting ------*/ 
+
+.mint{
+    width: 80%;
+    margin: auto;
+    padding: 60px 0;
+}
+.mint-left{
+    flex-basis: 65%;
+}
+.mint-left img{
+    width: 100%;
+}
+.mint-left h2{
+    color:white;
+    font-family:'Amatic SC', cursive;
+    font-size: 50px;  
+    font-weight: 600;
+    margin: 30px 40px;
+}
+.mint-left p{
+    color:white;
+    padding: 0px;
+    margin: 30px;
+    font-family: 'Special Elite', cursive;
+    font-weight: 400;
+    font-size: 20px;    
+}
+.mint-right{
+   flex-basis: 45%;
+   margin-top: 20%;
+}
+.mint-right h3{
+    color: #fff;
+    padding: 20px;
+    font-size: 40px;
+    margin: 60px;
+    margin-bottom 10px;
+}
+.mint-right div{
+    color: blanchedalmond;
+    box-sizing: border-box;
+    background-color: rgb(112,84,20);
+    font-family: 'Special Elite', cursive;
+    font-size: 30px;  
+    border-radius: 10px;
+    margin: 30px;
+    margin-bottom: 5;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4) 
+}
+.mint-right img {
+     width: 100%; 
+}
+.mint-right img:hover{
+    box-shadow: 0 0 20px 0px rgba(22,89,1,1.5); 
+    border-radius: 40px;
+    cursor: pointer;
 }
 
+@media(max-width: 800px){
+.sub-header h1{
+    margin-top: 200px;
+    }
+    .mint-left p{
+    font-size: 15px;
+    }
+    .mint-right div{
+    font-size: 10px;  
+    }   
+    .mint-left h2{
+    display: none; 
+    }
+    .mint-left p{
+    display: none; 
+    }
+    .mint-right h3{
+    width: 100%;    
+    font-size: 30px;   
+    left: 50%;
+    transform: translateX(-25%);  
+    }
+    .mint-right img {
+     width: 135%;
+    transform: translateX(-14%);
+    box-shadow: 0 0 20px 0px rgba(22,89,1,1.5); 
+    border-radius: 40px;
+    }
+    .mint-right div{
+    color: blanchedalmond;
+    box-sizing: border-box;
+    background-color: rgb(112,84,20);
+    font-family: 'Special Elite', cursive;
+    font-size: 29px;  
+    margin: -20px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4)         
+    }
+}
 /*------- Community ------*/ 
 
 .roles{
@@ -539,7 +667,6 @@ p2{
     font-weight: 400;
     font-size: 20px;
 }
-
 .roles-right{
    flex-basis: 45%;
    margin-top: 20%;
@@ -561,21 +688,6 @@ p2{
     padding: 8px;
     box-sizing: border-box;
 }
-
-@media(max-width: 800px){
-.sub-header h1{
-    margin-top: 200px;
-}
-    .roles-left h2{
-    font-size: 35px
-}
-    .roles-left p{
-    font-size: 15px
-}
-    .roles-right div{
-    font-size: 10px;  
-}
-    
     
     
     
