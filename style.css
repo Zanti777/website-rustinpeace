@@ -160,7 +160,6 @@ nav i{
     }
     .text-box{ 
     margin-top: 350px;
-    margin-bottom: 350px
     }
     .text-box h1{
         font-size: 20px;
@@ -169,7 +168,7 @@ nav i{
         font-size: 15px;
     }
     .collection h1{
-    margin-top: 520px;    
+    margin-top: 100%;    
     }
     .join h1{
         font-size: 25px;
