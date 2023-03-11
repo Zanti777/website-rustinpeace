@@ -151,8 +151,8 @@ nav i{
     margin-left: 25px;   
     }
     .social{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     padding: 10px 10px;
     background-color: rgba(255,215,0,0.4);
     border-radius: 50%;
@@ -168,7 +168,7 @@ nav i{
         font-size: 15px;
     }
     .collection h1{
-    margin-top: 450px;    
+    margin-top: 520px;    
     }
     .join h1{
         font-size: 25px;
