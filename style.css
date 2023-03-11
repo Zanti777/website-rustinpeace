@@ -22,7 +22,6 @@ nav{
     padding: 0.5% 2%;
     justify-content: space-between;
     align-items: center;
-    backface-visibility: hidden;
     font-family:'Amatic SC', cursive;
 }
 nav img{
@@ -31,7 +30,6 @@ nav img{
 .nav-links {
       flex: 1;
       width: 50%;
-      background-color: transparent;
       overflow: auto;
     }
 .nav-links ul li {
@@ -66,14 +64,12 @@ nav img{
     margin-left: 30px;
     justify-content: space-between;
     align-items: center;
-    backface-visibility: hidden;
 }
 .social{
     width:50px;
     height: 50px;
     padding: 5px 5px;
     margin-right: 20px;
-    transition: transform 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     border-radius: 50%;
     background-color: transparent;   
