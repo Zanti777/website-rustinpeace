@@ -138,11 +138,14 @@ nav i{
 
 
 @media(max-width: 800px){
-  html{
-  overflow-x:auto !important;
-  }
-  body{
-  overflow-x:auto !important;
+   html {
+    transform: rotate(-90deg);
+    transform-origin: left top;
+    width: 100vh;
+    overflow-x: hidden;
+    position: absolute;
+    top: 100%;
+    left: 0;
   }
     nav img{
     width: 170px
