@@ -138,8 +138,9 @@ nav i{
 
 
 @media(max-width: 800px){
-html, body {
-    max-width: 80%;
+    
+    html, body {
+    max-width: 40%;
     overflow-x: hidden;
 }
     nav img{
