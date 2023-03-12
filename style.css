@@ -11,6 +11,7 @@ body {
 }
 .header{
     min-height: 100vh;
+    overflow: hidden;
     width: 100%;
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/background.png);
     background-size: cover;
@@ -140,7 +141,6 @@ nav i{
 @media(max-width: 800px){
     
     html, body {
-    max-width: 40%;
     overflow-x: hidden;
 }
     nav img{
