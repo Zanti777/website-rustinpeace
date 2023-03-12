@@ -134,19 +134,16 @@ nav i{
     display: none
 }
 
-//stop horizontal overflow
-body {
- overflow-x:hidden;
-}
-
 /*----- GENERAL MEDIA -----*/
 
 
 @media(max-width: 800px){
- .Site {
-  overflow-x:hidden;
-    }
-    
+  html{
+  overflow-x:auto !important;
+  }
+  body{
+  overflow-x:auto !important;
+  }
     nav img{
     width: 170px
     }
