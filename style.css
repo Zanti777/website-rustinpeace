@@ -268,9 +268,15 @@ h3{
     .row{
     flex-direction: column;
     }
+    .text-box{
+    margin-top: 400px;
+    }
     .collection-col{
     margin-bottom: 10px;
     flex-basis: 100%;
+    }
+    .collection{
+    margin-top: 800px;    
     }
 }
 /*----- Upcoming -----*/
