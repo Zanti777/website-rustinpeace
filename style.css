@@ -165,10 +165,7 @@ nav i{
         font-size: 20px;
     }
     .text-box p{
-        font-size: 15px;
-    }
-    .collection h1{
-    margin-top: 100%;    
+        font-size: 15px;  
     }
     .join h1{
         font-size: 25px;
@@ -222,7 +219,6 @@ h1{
     font-size: 42px;
     font-weight: 600;
     font-family:'Amatic SC', cursive;
-    padding: 10px;
 }
 p{
     color:black;
@@ -265,13 +261,19 @@ h3{
 }
 
 @media(max-width: 800px){
+    .collection{
+    padding-top: 300px;
+}
+    .collection h1{
+     margin-top: 750px;
+}
     .row{
     flex-direction: column;
-    }
+}
     .collection-col{
     margin-bottom: 10px;
     flex-basis: 100%;
-    }
+}
 }
 /*----- Upcoming -----*/
 
