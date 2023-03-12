@@ -222,6 +222,7 @@ h1{
     font-size: 42px;
     font-weight: 600;
     font-family:'Amatic SC', cursive;
+    padding: 10px;
 }
 p{
     color:black;
