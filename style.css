@@ -138,7 +138,7 @@ nav i{
   overflow-x:hidden!important;
   }
   body{
-  overflow-x:hidden;
+  overflow-x:hidden!important;
   }
     nav img{
     width: 170px
