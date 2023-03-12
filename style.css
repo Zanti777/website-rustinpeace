@@ -15,21 +15,23 @@ body {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/background.png);
     background-size: cover;
     background-position: center;
-    position: relative;
+    position: relative
 }
 nav{
     display:flex;
     padding: 0.5% 2%;
     justify-content: space-between;
     align-items: center;
+    backface-visibility: hidden;
     font-family:'Amatic SC', cursive;
 }
 nav img{
-    width: 300px;
+    width: 300px
 }
 .nav-links {
       flex: 1;
       width: 50%;
+      background-color: transparent;
       overflow: auto;
     }
 .nav-links ul li {
@@ -41,7 +43,7 @@ nav img{
 .nav-links ul li a{
       color: white;
       text-decoration: none;
-      font-size: 35px;
+      font-size: 35px
     }
 .nav-links ul li a:hover{
       color: gold;
@@ -64,12 +66,14 @@ nav img{
     margin-left: 30px;
     justify-content: space-between;
     align-items: center;
+    backface-visibility: hidden;
 }
 .social{
     width:50px;
     height: 50px;
     padding: 5px 5px;
     margin-right: 20px;
+    transition: transform 0.5s ease-out;
     transition: background-color 0.5s ease-out;
     border-radius: 50%;
     background-color: transparent;   
@@ -77,7 +81,7 @@ nav img{
 .social:hover{
     background-color: rgba(255,215,0,0.4);
     border-radius: 50%;
-    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4);
+    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4)  
 }
 .text-box{
     width: 70%;
@@ -98,7 +102,7 @@ nav img{
     font-family: 'Special Elite', cursive;
     font-size: 20px;
     font-weight: 400;
-    color: white;
+    color: white
 }
 .hero-btn{
     display: inline-block;
@@ -119,29 +123,29 @@ nav img{
     transition: 0.2s;      
 }
 nav i{
-    display: none;
+    display: none
 }
 .fa-solid.fa-xmark {
     color: white;
-    display: none;
+    display: none
 }
 .fa-solid.fa-bars {
     color: white;
-    display: none;
+    display: none
 }
 
 /*----- GENERAL MEDIA -----*/
 
 
-@media only screen and (max-width: 800px) and (orientation: portrait) {
-    html, body {
-    overflow-x: hidden!important;
-    }
-    body {
-    position: relative!important;
-    }
+@media(max-width: 800px){
+  html{
+  overflow-x:auto !important;
+  }
+  body{
+  overflow-x:auto !important;
+  }
     nav img{
-    width: 170px;
+    width: 170px
     }
     .social-links {
     display: none;
@@ -151,21 +155,21 @@ nav i{
     margin-left: 25px;   
     }
     .social{
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
     padding: 10px 10px;
     background-color: rgba(255,215,0,0.4);
     border-radius: 50%;
     box-shadow: 0 0 10px 5px rgba(255,215,0,0.4) 
     }
-    .text-box{ 
-    margin-top: 350px;
+    .text-box{
+    margin-top: 150px;
     }
     .text-box h1{
         font-size: 20px;
     }
     .text-box p{
-        font-size: 15px;  
+        font-size: 15px;
     }
     .join h1{
         font-size: 25px;
@@ -211,7 +215,8 @@ nav i{
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
+    position: relative
 }
 h1{
     color:white;
@@ -260,16 +265,13 @@ h3{
 }
 
 @media(max-width: 800px){
-    .collection{
-   margin-top: 800px;
-}
     .row{
     flex-direction: column;
-}
+    }
     .collection-col{
     margin-bottom: 10px;
     flex-basis: 100%;
-}
+    }
 }
 /*----- Upcoming -----*/
 
@@ -413,10 +415,6 @@ p2{
     font-size: 20px;
     font-weight: 400;
     color: white
-}
-@media(max-width: 800px){
-.about-col p{
-    font-size: 15px;
 }
 
 /*----- Explore NFTs page ----*/   
