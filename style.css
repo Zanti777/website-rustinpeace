@@ -134,10 +134,12 @@ nav i{
 
 
 @media(max-width: 800px){
-    html, body{
-    width: 100%;    
-    overflow-x: hidden!important;
-  }
+    html, body {
+    overflow-x: hidden;
+    }
+    body {
+    position: relative
+    }
     nav img{
     width: 170px
     }
