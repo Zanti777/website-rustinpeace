@@ -15,7 +15,7 @@ body {
     background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(images/background.png);
     background-size: cover;
     background-position: center;
-    position: relative
+    position: relative;
 }
 nav{
     display:flex;
@@ -25,7 +25,7 @@ nav{
     font-family:'Amatic SC', cursive;
 }
 nav img{
-    width: 300px
+    width: 300px;
 }
 .nav-links {
       flex: 1;
@@ -41,7 +41,7 @@ nav img{
 .nav-links ul li a{
       color: white;
       text-decoration: none;
-      font-size: 35px
+      font-size: 35px;
     }
 .nav-links ul li a:hover{
       color: gold;
@@ -77,7 +77,7 @@ nav img{
 .social:hover{
     background-color: rgba(255,215,0,0.4);
     border-radius: 50%;
-    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4)  
+    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4);
 }
 .text-box{
     width: 70%;
@@ -98,7 +98,7 @@ nav img{
     font-family: 'Special Elite', cursive;
     font-size: 20px;
     font-weight: 400;
-    color: white
+    color: white;
 }
 .hero-btn{
     display: inline-block;
@@ -119,15 +119,15 @@ nav img{
     transition: 0.2s;      
 }
 nav i{
-    display: none
+    display: none;
 }
 .fa-solid.fa-xmark {
     color: white;
-    display: none
+    display: none;
 }
 .fa-solid.fa-bars {
     color: white;
-    display: none
+    display: none;
 }
 
 /*----- GENERAL MEDIA -----*/
@@ -135,13 +135,13 @@ nav i{
 
 @media(max-width: 800px){
     html, body {
-    overflow-x: hidden;
+    overflow-x: hidden!important;
     }
     body {
-    position: relative
+    position: relative!important;
     }
     nav img{
-    width: 170px
+    width: 170px;
     }
     .social-links {
     display: none;
