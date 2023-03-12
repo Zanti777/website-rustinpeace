@@ -134,11 +134,14 @@ nav i{
 
 
 @media(max-width: 800px){
+    
   html{
-  overflow-x:hidden!important;
+    overflow-x:hidden!important;
   }
   body{
-  overflow-x:hidden!important;
+    overflow-x:hidden!important;
+    overflow-y:hidden!important;
+    overflow:hidden!important;
   }
     nav img{
     width: 170px
