@@ -212,7 +212,6 @@ nav i{
     margin: auto;
     text-align: center;
     padding-top: 200px;
-    position: relative
 }
 h1{
     color:white;
@@ -262,7 +261,7 @@ h3{
 
 @media(max-width: 800px){
     .collection{
-    padding-top: 300px;
+    padding: 200px 0;
 }
     .collection h1{
      margin-top: 750px;
