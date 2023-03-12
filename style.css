@@ -261,7 +261,7 @@ h3{
 
 @media(max-width: 800px){
     .collection{
-    padding: 1000px 0;
+   margin-top: 800px;
 }
     .row{
     flex-direction: column;
