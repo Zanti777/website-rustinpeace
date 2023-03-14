@@ -209,7 +209,7 @@ nav i{
     }   
 }
 
-@media only screen and (orientation: landscape){
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape){
     
     html, body {
     overflow-x: hidden;
@@ -220,7 +220,38 @@ nav i{
     .social-links {
     display: none;
     }
- 
+ .nav-links ul li{
+        display:contents;
+    }
+    .nav-links{
+        position:absolute;
+        backface-visibility: hidden;
+        background-color:cadetblue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align:left;
+        z-index: 2;
+        transition: 1s;
+    }
+.fa-solid.fa-xmark {
+    color: white;
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer
+}
+.fa-solid.fa-bars {
+    color: white;
+    display: block;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer
+ }
+    .nav-links ul{
+        padding: 30px;
+    }
 }    
 /*----- Collection -----*/
 
