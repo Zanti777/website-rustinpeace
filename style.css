@@ -182,10 +182,10 @@ nav i{
         height: 100vh;
         width: 200px;
         top: 0;
+        right: -200px;
         text-align:left;
-        left: -200px; /* move off the screen */
-        z-index: 1; /* make sure it's above other elements */
-        transition: left 0.3s ease-out; /* add a transition effect */
+        z-index: 2;
+        transition: 1s;
     }
 .fa-solid.fa-xmark {
     color: white;

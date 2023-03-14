@@ -135,19 +135,16 @@
 </style>
     
 <script>
-    var navLinks = document.getElementById("navLinks");
-
-    function toggleMenu() {
-        navLinks.classList.toggle("show");
+    var navLinks = document.getElementById("navLinks")
+    
+    function showMenu(){
+        navLinks.style.right = "0";
     }
-
-    // Close the menu if the user clicks outside of it
-    window.onclick = function(event) {
-        if (!event.target.matches('.menu-icon') && navLinks.classList.contains('show')) {
-            navLinks.classList.remove('show');
-        }
-    }
+      function hideMenu(){
+        navLinks.style.right = "-200px";
+      }
 </script>
+   
 
     
 </body>
