@@ -125,13 +125,11 @@ nav img{
 nav i{
     display: none
 }
-.fa-solid.fa-xmark {
-    color: white;
-    display: none
+.show-menu{
+    display: none;
 }
-.fa-solid.fa-bars {
-    color: white;
-    display: none
+.hide-menu{
+    display: none;
 }
 
 /*----- GENERAL MEDIA -----*/
@@ -175,33 +173,33 @@ nav i{
     .nav-links ul li{
         display:contents;
     }
-    .nav-links{
-        position:absolute;
-        backface-visibility: hidden;
+  .nav-links{
+        position:fixed;
         background-color:cadetblue;
         height: 100vh;
         width: 200px;
         top: 0;
-        right: -200px;
+        right: 0;
         text-align:left;
-        overflow-x: hidden;
-        z-index: 100;
+        z-index: 2;
         transition: 1s;
     }
-.fa-solid.fa-xmark {
-    color: white;
+.show-menu{
+    position:fixed;
+    right: 0;
+    top: 0;
+    width: 50px;
+    text-align:center;
+    height: 50px;
     display: block;
-    margin: 10px;
-    font-size: 22px;
+    z-index: 3;
+    margin: 7px;
     cursor: pointer
 }
-.fa-solid.fa-bars {
-    color: white;
-    display: block;
-    margin: 10px;
-    font-size: 22px;
-    cursor: pointer
- }
+.show-menu img{
+    width: 30px;
+}
+    
     .nav-links ul{
         padding: 30px;
     }
