@@ -125,8 +125,12 @@ nav img{
 nav i{
     display: none
 }
-.show-menu img{
-    display: none;
+.show-menu{
+    position:fixed;
+    right: 0;
+    top: 0;
+    width: 50px;
+    display:none;
 }
 
 /*----- GENERAL MEDIA -----*/
