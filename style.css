@@ -122,9 +122,6 @@ nav img{
     background: rgba(194,142,10);
     transition: 0.2s;      
 }
-nav i{
-    display: none
-}
 .show-menu{
     position:fixed;
     right: 0;
