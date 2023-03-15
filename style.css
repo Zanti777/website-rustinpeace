@@ -130,7 +130,7 @@ nav img{
     display:none;
 }
 
-/*----- GENERAL MEDIA -----*/
+
 
 
 @media only screen and (min-width: 200px) and (max-width: 767px) {
@@ -171,7 +171,7 @@ nav img{
     .nav-links ul li{
         display:contents;
     }
-  .nav-links{
+    .nav-links{
         position:fixed;
         background-color:cadetblue;
         height: 100vh;
@@ -197,14 +197,16 @@ nav img{
 .show-menu img{
     width: 30px;
 }
-    .nav-links ul{
-        padding: 30px;
-    }
+.nav-links ul{
+    padding: 30px;
+}
 .hero-btn{
     display: none;
-    }   
+}   
 }  
-/*----- Collection -----*/
+
+
+
 
 .collection{
     width: 80%;
@@ -274,7 +276,9 @@ h3{
     margin-top: 800px;    
     }
 }
-/*----- Upcoming -----*/
+
+
+
 
 .upcoming{
     width: 80%;
@@ -326,7 +330,9 @@ p3{
     opacity: 1;
     cursor: pointer;
     }
-/*----- Join the Community ----*/   
+
+
+
 
 .join{
     margin: 300px auto;
@@ -354,7 +360,8 @@ p3{
     color: white
     }
 }
-/*----- Footer -----*/
+
+
 
 
 .footer{
@@ -377,7 +384,8 @@ p2{
 }
 
 
-/*----- About Us Page ----*/   
+
+
 
 .sub-header{
     height: 50vh;
@@ -418,7 +426,9 @@ p2{
     color: white
 }
 
-/*----- Explore page ----*/   
+
+
+
 
 .explore{
     width: 80%;
@@ -537,7 +547,9 @@ p2{
     background: transparent;      
     }
 }
-/*------- Minting ------*/ 
+
+
+
 
 .mint{
     width: 80%;
@@ -639,7 +651,9 @@ p2{
     box-shadow: 0 0 10px 5px rgba(255,215,0,0.4)         
     }
 }
-/*------- Community ------*/ 
+
+
+
 
 .roles{
     width: 80%;
