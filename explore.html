@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+   <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+     <title>Rust In Peace</title>
+    <link rel="icon" type="image/ico"  href="images/favicon.ico">
+     <link rel="stylesheet" href="style.css"> 
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+     <script src="https://kit.fontawesome.com/f51fd84a2a.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head> 
+<body>
+<section class="sub-header">
+        <nav> 
+            <a href="index.html"><img src="images/logo.png"></a>   
+            <div class="nav-links" id="navlinks"> 
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="about.html">About</a>
+                    <li><a href="minting.html">Minting</a>
+                    <li><a href="community.html">Community</a>
+                    <li><a href="explore.html">Explore</a> 
+                </ul>
+            </div> 
+                <div class="social-links">
+                    <a href="https://discord.gg/VHEbcnmVVB"><img src="images/discord.png" alt="discord" class="social"></a>
+                    <a href="https://instagram.com/zanti_zanti7"><img src="images/instagram.png" alt="instagram" class="social"></a>
+                    <a href="https://twitter.com/RustInPeaceNFT"><img src="images/twitter.png" alt="twitter" class="social"></a>
+                </div>  
+              <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+          </nav> 
+          <h1>Explore NFTs</h1>
+
+</section>
+
+     <!------- Explore NFTs ------> 
+    
+  <section class="upcoming">
+     
+    <div class="explore">
+     <div class="explore-col">
+          <img id= "ed1" src="images/ed1.png"> 
+          <div class="layer1">
+              <h3>EDITION 1<br>'Life Bulb'<br><br><a href="https://www.jpg.store/collection/rustinpeaceedition1" class="buy-btn">BUY</a></h3>
+               <p3>"Life Bulb" conceptualises a shattered glass bulb, though not bereft of its light as it now nurtures a miniature ecosystem of bio-luminescent fungi. This scene invites us to slow down and appreciate the beauty of the natural world and the magic of our intricate inventions, which we often pass by or discard without a thought. 
+              </p3>
+       </div>
+    </div> 
+     <div class="explore-col">
+        <img id= "ed2" src="images/ed2.png"> 
+          <div class="layer1">
+              <h3>EDITION 2<br>'Eco Chamber'<br><br><a href="https://www.jpg.store/collection/rustinpeaceedition2" class="buy-btn">BUY</a></h3>
+               <p3> The winter storms often bring treasures washed ashore near my home, like an old rusted gas cylinder found rolling in the tidal flow. On close inspection, this 'junk' had become a new home to some on its long journey through the seas. Crustaceans, barnacles, seaweed, and other organisms had taken up residence on its corroded metal surface, forming a miniature ecosystem that was coexisting with the cylinder's decay. The juxtaposition of the  manufactured object hosting new life left me with an appreciation for the resilience of the natural world, which is echoed in this piece "Eco Chamber." The artwork depicts the transformation of objects that harbour toxic substances into something where life can thrive and invites us to nurture and support the growth of the natural world rather than bring harm upon it.
+              </p3>
+       </div>
+       </div>
+        <div class="explore-col">
+        <img id= "ed3" src="images/ed3.png"> 
+          <div class="layer1">
+              <h3>EDITION 3<br>'Sun Dial'<br><br><a href="https://www.jpg.store/collection/rustinpeace-edition3" class="buy-btn">BUY</a></h3>
+               <p3>"Sun Dial" explores the concept of time and our place in the universe. The artwork showcases an intersection between humanity's systems of timekeeping and the natural rhythms of the universe, symbolizing our attempts to harness and hold sway over the world.
+               However, within the vastness and chaos of the universe we are a but a mere breathe on this timeline.
+               </p3>
+       </div>
+       </div>
+        <div class="explore-col">
+        <img id= "ed4" src="images/ed4.png"> 
+          <div class="layer1">
+              <h3>EDITION 4<br>'Masquerade'<br><br><a href="minting.html" class="buy-btn">BUY</a></h3>
+               <p3>The title, "Masquerade," alludes to the masking or disguising of one's true identity. It evokes a sense of obscurity and distortion. The gas mask, an object emblematic of war and violence, remains a sobering reminder of the destruction and conflicts wreaked on the world. This piece depicts the ways in which the brutal history of warfare has only served to mask our connection to the natural world.
+               </p3>
+       </div>
+       </div>    
+    </div>  
+</section>   
+    
+      
+
+    
+    
+    
+    
+    
+ <!------- Footer ------> 
+    
+<section class="footer">
+    <p2>Rust In Peace NFT collectibles on the Cardano Blockchain</p2>
+    <br><br>
+    <img id= "cardano" src="images/cardano.png"> 
+    </section>   
+    
+
+ 
+<!--------JavaScript for Toggle Menu------>    
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+</style>
+    
+<script>
+    let navlinks = document.getElementById("navlinks");
+    
+    function showMenu(){
+        navlinks.style.width = "50%";
+    }
+      function hideMenu(){
+        navlinks.style.width = "0%";
+      }
+</script>
+   
+<script>
+        // Array to store the image URLs for element "ed1"
+        var images = ["images/ed1.png", "images/ed1-2.png", "images/ed1-3.png", "images/ed1-4.png", "images/ed1-5.png"];
+        // Counter variable to keep track of the current image for element "ed1"
+        var currentImage = 0;
+
+        // Array to store the image URLs for element "ed2"
+        var images1 = ["images/ed2.png", "images/ed2-2.png", "images/ed2-3.png", "images/ed2-4.png", "images/ed2-5.png"];
+        // Counter variable to keep track of the current image for element "ed2"
+        var currentImage1 = 0;
+    
+        // Array to store the image URLs for element "ed3"
+        var images2 = ["images/ed3.png", "images/ed3-2.png", "images/ed3-3.png", "images/ed3-4.png", "images/ed3-5.png"];
+        // Counter variable to keep track of the current image for element "ed3"
+        var currentImage2 = 0;
+    
+        // Array to store the image URLs for element "ed4"
+        var images3 = ["images/ed4.png", "images/ed4-1.png", "images/ed4-2.png", "images/ed4-3.png", "images/ed4-4.png"];
+        // Counter variable to keep track of the current image for element "ed4"
+        var currentImage3 = 0;
+    
+    // Function to update the image source and increment the counter for element "ed1"
+    function updateImage() {
+        $("#ed1").attr("src", images[currentImage]);
+        currentImage = (currentImage + 1) % images.length;
+}
+    // Function to update the image source and increment the counter for element "ed2"
+    function updateImage1() {
+        $("#ed2").attr("src", images1[currentImage1]);
+    currentImage1 = (currentImage1 + 1) % images1.length;
+}
+    // Function to update the image source and increment the counter for element "ed3"
+    function updateImage2() {
+        $("#ed3").attr("src", images2[currentImage2]);
+    currentImage2 = (currentImage2 + 1) % images2.length;
+}
+    // Function to update the image source and increment the counter for element "ed4"
+    function updateImage3() {
+        $("#ed4").attr("src", images3[currentImage3]);
+    currentImage3 = (currentImage3 + 1) % images3.length;
+}
+      $(document).ready(function() {
+        setInterval(updateImage, 2000);
+        setInterval(updateImage1, 2000);
+        setInterval(updateImage2, 2000); 
+        setInterval(updateImage3, 2000);   
+      });
+</script>
+    
+</body>
+</html>
