@@ -125,10 +125,7 @@ nav img{
 nav i{
     display: none
 }
-.show-menu{
-    display: none;
-}
-.hide-menu{
+.show-menu img{
     display: none;
 }
 
