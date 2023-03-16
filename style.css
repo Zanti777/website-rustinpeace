@@ -123,17 +123,23 @@ nav img{
     transition: 0.2s;      
 }
 .show-menu{
-    position:fixed;
-    right: 0;
-    top: 0;
-    width: 50px;
     display:none;
 }
 
 
 
 
-@media only screen and (min-width: 200px) and (max-width: 767px) {
+@media only screen and (orientation: landscape)and (max-width: 1630px) {
+    .social-links {
+    display: none;
+    }
+    .text-box{
+    margin-top: 150px;
+}
+}
+
+
+@media only screen and (min-width: 200px) and (max-width: 860px) {
     
     body {
     overflow-x: hidden;
