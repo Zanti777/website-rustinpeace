@@ -122,10 +122,9 @@ nav img{
     background: rgba(194,142,10);
     transition: 0.2s;      
 }
-#showmenu.show-menu{
-    display:none;
+.show-menu {
+    display: none;
 }
-
 
 
 
@@ -188,28 +187,14 @@ nav img{
         z-index: 2;
         transition: 1s;
     }  
-     .showmenu.show-menu{
-     position:fixed;
-     right: 0;
-     top: 0;
-     width: 50px;
-     text-align:center;
-     height: 50px;
-     display: block;
-     z-index: 3;
-     margin: 7px;
-     cursor: pointer
-     }
-     .showmenu.show-menu img{
-     width: 30px;
-}
+
      .nav-links ul{
       padding: 30px;
-}
+     }
      .hero-btn{
      display: none;
-}   
-}  
+     }   
+}
 
 
 
