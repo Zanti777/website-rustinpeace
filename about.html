@@ -30,25 +30,6 @@
                     <div class="show-menu" id="showmenu">
                     <img src="images/menu.png" id=menu >
                     </div> 
-  
-      <script>
-    var showmenu = document.getElementById("showmenu")
-    var navLinks = document.getElementById("navLinks")
-    var menu = document.getElementById("menu")
-    
-    navLinks.style.right = "-250px"
-    
-   showmenu.onclick = function(){
-        if(navLinks.style.right == "-200px"){
-            navLinks.style.right = "-0px";
-            menu.src = "images/cross.png";
-        }
-       else{ 
-           navLinks.style.right = "-200px";
-           menu.src = "images/menu.png";
-      }
-   }
-</script>
    
           </nav> 
           <h1>About Us</h1>
@@ -88,7 +69,28 @@
     
 
  
-<!--------JavaScript for Toggle Menu------>    
+<!--------JavaScript for Toggle Menu------>   
+    
+         <script>
+    var showmenu = document.getElementById("showmenu")
+    var navLinks = document.getElementById("navLinks")
+    var menu = document.getElementById("menu")
+    
+    navLinks.style.right = "-250px"
+    
+   showmenu.onclick = function(){
+        if(navLinks.style.right == "-200px"){
+            navLinks.style.right = "-0px";
+            menu.src = "images/cross.png";
+        }
+       else{ 
+           navLinks.style.right = "-200px";
+           menu.src = "images/menu.png";
+      }
+   }
+</script>
+    
+    
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
