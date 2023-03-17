@@ -11,27 +11,36 @@
      <script src="https://kit.fontawesome.com/f51fd84a2a.js" crossorigin="anonymous"></script>
 </head> 
 <body>
+    
 <section class="header">
+    
+    <button class="mobile-nav-toggle" 
+    aria-controls="primary-navigation" aria-expanded="false">
+        <span
+              class="sr-only">Menu</span>
+    </button>
+    
          <nav> 
             <a href="index.html"><img src="images/logo.png"></a>   
-            <div class="nav-links" id="navLinks"> 
-              <ul>
+              
+             <div class="nav-links" id="primary-navigation"> 
+                <ul>
                     <li><a href="about.html">About</a>
                     <li><a href="minting.html">Minting</a>
                     <li><a href="community.html">Community</a>
                     <li><a href="explore.html">Explore</a> 
-              </ul>
-            </div> 
+                </ul>
+              </div> 
                 <div class="social-links">
-                    <a href="https://discord.gg/VHEbcnmVVB"><img src="images/discord.png" alt="discord" class="social"></a>
-                    <a href="https://instagram.com/zanti_zanti7"><img src="images/instagram.png" alt="instagram" class="social"></a>
-                    <a href="https://twitter.com/RustInPeaceNFT"><img src="images/twitter.png" alt="twitter" class="social"></a>
-                </div>  
-             
-                <div class="show-menu" id="showmenu">
-                    <img src="images/menu.png" id=menu >
-                </div>    
+                    <a href="https://discord.gg/VHEbcnmVVB">
+                        <img src="images/discord.png" alt="discord" class="social"></a>
+                    <a href="https://instagram.com/zanti_zanti7">
+                        <img src="images/instagram.png" alt="instagram" class="social"></a>
+                    <a href="https://twitter.com/RustInPeaceNFT">
+                        <img src="images/twitter.png" alt="twitter" class="social"></a>
+              </div>  
           </nav>    
+    
             <div class="text-box">
                     <h1>WELCOME TO RUST IN PEACE</h1>
                     <br><br>                          
@@ -131,24 +140,6 @@
  
 <!--------JavaScript for Toggle Menu------>   
     
-      <script>
-    var showmenu = document.getElementById("showmenu")
-    var navLinks = document.getElementById("navLinks")
-    var menu = document.getElementById("menu")
-    
-    navLinks.style.right = "-200px"
-    
-   showmenu.onclick = function(){
-        if(navLinks.style.right == "-200px"){
-            navLinks.style.right = "-0px";
-            menu.src = "images/cross.png";
-        }
-       else{ 
-           navLinks.style.right = "-200px";
-           menu.src = "images/menu.png";
-      }
-   }
-</script>    
     
     
 <style>
