@@ -12,26 +12,36 @@
 </head> 
 <body>
 <section class="sub-header">
-               <nav> 
+    
+    
+    <button class="mobile-nav-toggle" 
+    aria-controls="navLinks" aria-expanded="false">
+        <span class="sr-only">Menu</span>
+    </button>
+    
+         <nav> 
             <a href="index.html"><img src="images/logo.png"></a>   
-            <div class="nav-links" id="navLinks"> 
-             <ul>
+              
+             <div class="nav-links" id="navLinks"
+                 data-visible="false">
+                <ul>
                     <li><a href="about.html">About</a>
                     <li><a href="minting.html">Minting</a>
                     <li><a href="community.html">Community</a>
                     <li><a href="explore.html">Explore</a> 
                 </ul>
-            </div> 
+              </div> 
                 <div class="social-links">
-                    <a href="https://discord.gg/VHEbcnmVVB"><img src="images/discord.png" alt="discord" class="social"></a>
-                    <a href="https://instagram.com/zanti_zanti7"><img src="images/instagram.png" alt="instagram" class="social"></a>
-                    <a href="https://twitter.com/RustInPeaceNFT"><img src="images/twitter.png" alt="twitter" class="social"></a>
-                </div>  
-                    <div class="show-menu" id="showmenu">
-                    <img src="images/menu.png" id=menu >
-                    </div> 
-   
-          </nav> 
+                    <a href="https://discord.gg/VHEbcnmVVB">
+                        <img src="images/discord.png" alt="discord" class="social"></a>
+                    <a href="https://instagram.com/zanti_zanti7">
+                        <img src="images/instagram.png" alt="instagram" class="social"></a>
+                    <a href="https://twitter.com/RustInPeaceNFT">
+                        <img src="images/twitter.png" alt="twitter" class="social"></a>
+              </div>  
+          </nav>    
+    
+    
           <h1>About Us</h1>
 </section>
     <section class="about-us"> 
@@ -69,25 +79,26 @@
     
 
  
-<!--------JavaScript for Toggle Menu------>   
+<!--JavaScript for Toggle Menu-->   
     
-         <script>
-    var showmenu = document.getElementById("showmenu")
-    var navLinks = document.getElementById("navLinks")
-    var menu = document.getElementById("menu")
+<script>
+    const navLinks = document.getElementById("navLinks");
+    const navToggle = document.querySelector(".mobile-nav-toggle"); 
     
-    navLinks.style.right = "-200px"
-    
-   showmenu.onclick = function(){
-        if(navLinks.style.right == "-200px"){
-            navLinks.style.right = "-0px";
+    navToggle.addEventListener("click", function(){
+        const visibility = navLinks.getAttribute("data-visible");
+        
+        if(visibility === "false"){
+            navLinks.setAttribute("data-visible", "true");
+            navToggle.setAttribute("aria-expanded", true);
+        } else if (visibility === "true"){
+            navLinks.setAttribute("data-visible", "false");
+            navToggle.setAttribute("aria-expanded", "false");
         }
-       else{ 
-           navLinks.style.right = "-200px";
-           menu.src = "images/menu.png";
-      }
-   }
+    });
 </script>
+    
+    
     
     
 <style>
