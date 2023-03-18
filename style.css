@@ -132,10 +132,9 @@ nav img{
     transition: 0.2s;      
 }
 
-/* general media */
 
 
-/* general media landscape */  
+/* GENERAL MEDIA landscape */  
 
 @media only screen and (orientation: landscape)and (max-width: 1630px) {
     .social-links {
@@ -147,7 +146,11 @@ nav img{
     .sub-header h1{ 
     margin-top: -50px;
     } 
-}
+}  
+
+
+/* GENERAL MEDIA */
+
 
 @media only screen and (min-width: 200px) and (max-width: 880px) {
     nav img{
@@ -254,13 +257,7 @@ nav img{
         font-size: 60px;
     }
 }
- /* about us media small screens */
 
-@media only screen and (max-width: 280px) {
-      .sub-header h1{
-        font-size: 30px; 
-    }
-}
  /* general media small landscape screens */
 
 @media only screen and (orientation: landscape)and (max-height: 390px) {
@@ -270,8 +267,13 @@ nav img{
     }
 }
 
+ /* about us media small screens */
 
-
+@media only screen and (max-width: 280px) {
+      .sub-header h1{
+        font-size: 30px; 
+    }
+}
 
 /* Collection */
 
@@ -330,7 +332,7 @@ h3{
 }
 
 /* collection media */ 
-@media only screen and (min-width: 200px) and (max-width: 767px){
+@media only screen and (min-width: 200px) and (max-width: 880px) {
     .row{
     flex-direction: column;
     }
@@ -342,7 +344,17 @@ h3{
     margin-top: 150px;    
     }
 }
+/* collection media landscape */  
 
+@media only screen and (orientation: landscape)and (max-width: 1630px) {
+    .collection-col{
+    margin-right: 100px;
+    margin-left: 100px;    
+    margin-bottom: 20px;
+    padding: 15px;
+    }
+}
+    
 /* Upcoming */
 
 
@@ -397,6 +409,33 @@ p3{
     cursor: pointer;
     }
 
+/* upcoming media */  
+
+@media only screen and (orientation: landscape)and (max-width: 1630px) {
+   .upcoming{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+} 
+.upcoming-col{
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.layer{    
+    background-color: rgba(135,135,135,0.1); 
+ }
+.upcoming-col img{
+    width: 40%;
+    display: flex;    
+    }
+.layer h3{
+    margin-left: 150px;
+    }
+}
+
+    
 /* Join the community */
 
 .join{
