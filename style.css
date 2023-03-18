@@ -132,8 +132,10 @@ nav img{
     transition: 0.2s;      
 }
 
-
 /* general media */
+
+
+/* general media landscape */  
 
 @media only screen and (orientation: landscape)and (max-width: 1630px) {
     .social-links {
@@ -144,7 +146,7 @@ nav img{
     }
     .sub-header h1{ 
     margin-top: -50px;
-    }
+    } 
 }
 
 @media only screen and (min-width: 200px) and (max-width: 880px) {
@@ -232,7 +234,13 @@ nav img{
      }   
 }  
 
-@media only screen and (min-width: 478px) and (max-width: 1000px) {
+ /* general media large screens */
+
+@media only screen and (min-width: 478px) and (max-width: 1300px) {
+    
+    .social-links {
+    display: none;
+    }
       nav img{
     width: 300px
     }
@@ -242,7 +250,28 @@ nav img{
     .text-box p{
         font-size: 20px;
     }
+    .sub-header h1{
+        font-size: 60px;
+    }
 }
+ /* about us media small screens */
+
+@media only screen and (max-width: 280px) {
+      .sub-header h1{
+        font-size: 30px; 
+    }
+}
+ /* general media small landscape screens */
+
+@media only screen and (orientation: landscape)and (max-height: 390px) {
+        
+    .sub-header h1{
+        display: none;
+    }
+}
+
+
+
 
 /* Collection */
 
@@ -300,6 +329,7 @@ h3{
     cursor: pointer;
 }
 
+/* collection media */ 
 @media only screen and (min-width: 200px) and (max-width: 767px){
     .row{
     flex-direction: column;
@@ -367,7 +397,6 @@ p3{
     cursor: pointer;
     }
 
-
 /* Join the community */
 
 .join{
@@ -384,7 +413,9 @@ p3{
     display: none;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 767px){
+/* community media */ 
+
+@media only screen and (min-width: 200px) and (max-width: 880px) {
     .row{
     flex-direction: column;
     }
@@ -395,8 +426,35 @@ p3{
     font-size: 12px;
     color: white
     }
+    .roles-left p{
+    font-size: 15px;
+    }
+}
+ /* community media small screens */
+
+@media only screen and (max-width: 280px) {
+     .roles-left p{
+    font-size: 12px!important;
+    }
+    .roles-right span{
+    font-size: 8px;
+    color: whiteize: 5px;
+    }
 }
 
+ /* community media landscape */  
+@media only screen and (orientation: landscape)and (max-width: 1630px) {
+
+    .row{
+    flex-direction: column;
+    }
+    .collection-col{
+    flex-basis: 100%;
+    }
+    .roles-right span{
+    font-size: 17px;
+    }
+}
 
 /* Footer */
 
@@ -459,7 +517,13 @@ p2{
     color: white
 }
 
+ /* about us media small screens */
 
+@media only screen and (max-width: 280px) {
+     .about-col p{
+    font-size: 12px;
+    }
+}
 /* Explore */
 
 
@@ -555,7 +619,8 @@ p2{
     transition: 0.2s; 
 }
 
-@media only screen and (min-width: 200px) and (max-width: 767px){
+/* explore media */ 
+@media only screen and (min-width: 200px) and (max-width: 1000px){
     .explore{
     width: 100%;
     padding-top: 0px;
@@ -581,6 +646,18 @@ p2{
     }
 }
 
+/* explore media landscape */ 
+@media only screen and (orientation: landscape) and (max-width: 1630px) {
+    
+    .explore-col p3{
+    font-size: 14px;
+    bottom: 15%;
+    }
+    .explore-col h3{
+    height: 100px;
+    font-size: 16px;
+    }
+}
 /* Minting */
 
 
@@ -644,14 +721,12 @@ p2{
     cursor: pointer;
 }
 
-@media only screen and (min-width: 200px) and (max-width: 767px){
-
-    .mint-left p{
-    font-size: 15px;
+/* minting media */ 
+@media only screen and (min-width: 200px) and (max-width: 1000px){
+    
+    .row{
+    flex-direction: column;
     }
-    .mint-right div{
-    font-size: 10px;  
-    }   
     .mint-left h2{
     display: none; 
     }
@@ -670,16 +745,25 @@ p2{
     border-radius: 40px;
     }
     .mint-right div{
-    color: blanchedalmond;
-    box-sizing: border-box;
-    background-color: rgb(112,84,20);
-    font-family: 'Special Elite', cursive;
     font-size: 29px;  
-    margin: -20px;
-    padding: 50px;
-    box-sizing: border-box;
-    text-align: center;
-    box-shadow: 0 0 10px 5px rgba(255,215,0,0.4)         
+    margin: -20px;      
+    }
+}
+/* minting media landscape */ 
+@media only screen and (orientation: landscape)and (max-width: 1630px) { 
+
+    .row{
+    flex-direction: column;
+    }
+    .mint-left h2{
+    display: none; 
+    }
+    .mint-left p{
+    display: none; 
+    }
+    .mint-right h3{
+    font-size: 40px; 
+    margin-left: 175px;  
     }
 }
 
