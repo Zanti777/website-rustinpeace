@@ -147,7 +147,7 @@ nav img{
     }
 }
 
-@media only screen and (min-width: 200px) and (max-width: 860px) {
+@media only screen and (min-width: 200px) and (max-width: 880px) {
     nav img{
     width: 200px
     }
@@ -222,8 +222,7 @@ nav img{
         aspect-ratio: 1;
         top: 2rem;
         right: 2rem;      
-    }
-    
+    } 
     .mobile-nav-toggle[aria-expanded="true"]{
         background-image:  url(images/cross.png);
     }
@@ -233,6 +232,17 @@ nav img{
      }   
 }  
 
+@media only screen and (min-width: 478px) and (max-width: 1000px) {
+      nav img{
+    width: 300px
+    }
+    .text-box h1{
+        font-size: 25px;
+    }
+    .text-box p{
+        font-size: 20px;
+    }
+}
 
 /* Collection */
 
@@ -294,15 +304,12 @@ h3{
     .row{
     flex-direction: column;
     }
-    .text-box{
-    margin-top: 400px;
-    }
     .collection-col{
     margin-bottom: 10px;
     flex-basis: 100%;
     }
     .collection{
-    margin-top: 800px;    
+    margin-top: 150px;    
     }
 }
 
