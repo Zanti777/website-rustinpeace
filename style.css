@@ -144,8 +144,11 @@ nav img{
     margin-top: 150px;
     }
     .sub-header h1{ 
-    margin-top: -50px;
-    } 
+    top: 10px;
+    }
+    .explore-col {
+    top: 100px;
+    }
 }  
 
 
