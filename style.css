@@ -280,7 +280,7 @@ nav img{
 
  /* general media small landscape screens */
 
-@media only screen and (orientation: landscape)and (max-height: 390px) {
+@media only screen and (orientation: landscape)and (max-height: 290px) {
         
     .sub-header h1{
         display: none;
@@ -720,6 +720,9 @@ p2{
 /* explore media landscape */ 
 @media only screen and (orientation: landscape) and (max-width: 1630px) {
     
+    .explore{
+    margin-top: 150px;
+    }
     .explore-col p3{
     font-size: 14px;
     bottom: 15%;
