@@ -361,9 +361,17 @@ h3{
     flex-basis: 100%;
     }
     .collection{
-    margin-top: 150px;    
+    margin-top: 15px;    
     }
 }
+ /* general media small portrait screens */
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+    .collection{
+    margin-top: 150px;      
+    }
+}
+      
 /* collection media landscape */  
 
 @media only screen and (orientation: landscape)and (max-width: 1630px) {
