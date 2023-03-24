@@ -133,25 +133,6 @@ nav img{
 }
 
 
-
-/* GENERAL MEDIA landscape */  
-
-@media only screen and (orientation: landscape)and (max-width: 1630px) {
-    .social-links {
-    display: none;
-    }
-    .text-box{
-    margin-top: 150px;
-    }
-    .sub-header h1{ 
-    top: 10px;
-    }
-    .explore-col {
-    top: 100px;
-    }
-}  
-
-
 /* GENERAL MEDIA */
 
 
@@ -175,7 +156,7 @@ nav img{
     box-shadow: 0 0 10px 5px rgba(255,215,0,0.4) 
     }
     .text-box{
-    margin-top: 150px;
+    margin-top: 50px;
     }
     .text-box h1{
         font-size: 20px;
@@ -259,6 +240,42 @@ nav img{
     .sub-header h1{
         font-size: 60px;
     }
+}
+
+/* GENERAL MEDIA landscape */  
+
+@media only screen and (orientation: landscape)and (max-width: 1630px) {
+    .social-links {
+    display: none;
+    }
+    .text-box{
+    margin-top: 150px;
+    }
+    .sub-header h1{ 
+    top: 10px;
+    }
+    .explore-col {
+    top: 100px;
+    }
+}  
+ /* general media small portrait screens */
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+.text-box{
+    margin-top: 150px;
+    }
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box p{
+        font-size: 15px;
+    }
+    .join h1{
+        font-size: 25px;
+    }
+    .sub-header h1{ 
+    margin-top: 80px;
+    }  
 }
 
  /* general media small landscape screens */
