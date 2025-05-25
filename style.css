@@ -388,81 +388,216 @@ h3{
     
 /* Upcoming */
 
-
 .upcoming{
-    width: 80%;
+    width: 90%;
     margin: auto;
     text-align: center;
     padding-top: 200px;
 } 
-.upcoming-col{
-    flex-basis: 32%;
-    border-radius: 10px;
-    margin-bottom: 30px;
+
+.upcoming-featured {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.upcoming-hero{
+    max-width: 600px;
+    width: 100%;
+    border-radius: 15px;
     position: relative;
     overflow: hidden;
+    box-shadow: 0 0 30px 10px rgba(255,215,0,0.2);
+    transition: all 0.5s ease;
 }
-.upcoming-col img{
+
+.upcoming-hero:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 40px 15px rgba(255,215,0,0.4);
+}
+
+.upcoming-hero img{
     width: 100%;
+    height: auto;
     display: block;
+    transition: transform 0.5s ease;
 }
-.layer{
-    background: transparent;
+
+.upcoming-hero:hover img {
+    transform: scale(1.05);
+}
+
+.layer-hero{
+    background: linear-gradient(0deg, rgba(0,0,0,0.8) 0%, transparent 70%);
     height: 100%;
     width: 100%;
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    align-items: flex-end;
     transition: 0.5s;
 }
-.layer:hover{
-    background: rgba(255,215,0,0.4);
+
+.layer-hero:hover{
+    background: linear-gradient(0deg, rgba(0,0,0,0.9) 0%, rgba(255,215,0,0.1) 70%);
 }
+
+.edition-info {
+    width: 100%;
+    padding: 30px;
+    text-align: center;
+}
+
+.edition-info h2{
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 48px;
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+.edition-description {
+    color: white;
+    font-family: 'Special Elite', cursive;
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    line-height: 1.4;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s ease 0.2s;
+}
+
+.upcoming-hero:hover .edition-description {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.coming-soon-badge {
+    display: inline-block;
+    background: rgba(255,215,0,0.9);
+    color: black;
+    font-family: 'Amatic SC', cursive;
+    font-size: 24px;
+    font-weight: 700;
+    padding: 8px 20px;
+    border-radius: 25px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    box-shadow: 0 0 15px rgba(255,215,0,0.5);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
 p3{
     font-family: 'Special Elite', cursive;
     font-size: 42px;
     color: rgb(156,122,44);
 }
-.layer h3{
-    width:100%;
-    color: white;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-}
-.layer:hover h3{
-    bottom: 30%;
-    opacity: 1;
-    cursor: pointer;
-    }
 
-/* upcoming media */  
+/* Upcoming Media Queries */
 
-@media only screen and (orientation: landscape)and (max-width: 1630px) {
-   .upcoming{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding-top: 100px;
-} 
-.upcoming-col{
-    margin-bottom: 30px;
-    position: relative;
-    overflow: hidden;
-}
-.layer{    
-    background-color: rgba(135,135,135,0.1); 
- }
-.upcoming-col img{
-    width: 40%;
-    display: flex;    
+@media only screen and (min-width: 200px) and (max-width: 880px) {
+    .upcoming{
+        width: 95%;
+        padding-top: 100px;
     }
-.layer h3{
-    margin-left: 150px;
+    
+    .upcoming-hero {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+    
+    .edition-info h2{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    
+    .edition-description {
+        font-size: 16px;
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+    .coming-soon-badge {
+        font-size: 20px;
+        padding: 6px 16px;
+    }
+    
+    p3 {
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 280px) and (max-width: 400px) {
+    .upcoming{
+        padding-top: 150px;
+    }
+    
+    .edition-info {
+        padding: 20px;
+    }
+    
+    .edition-info h2{
+        font-size: 28px;
+    }
+    
+    .edition-description {
+        font-size: 14px;
+    }
+    
+    .coming-soon-badge {
+        font-size: 18px;
+        padding: 5px 12px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-width: 1630px) {
+    .upcoming{
+        padding-top: 150px;
+    }
+    
+    .upcoming-hero {
+        max-width: 500px;
+    }
+    
+    .edition-info h2{
+        font-size: 36px;
+    }
+    
+    .edition-description {
+        font-size: 16px;
+    }
+}
+
+@media only screen and (orientation: landscape) and (max-height: 500px) {
+    .upcoming{
+        padding-top: 50px;
+    }
+    
+    .edition-info {
+        padding: 15px;
+    }
+    
+    .edition-info h2{
+        font-size: 24px;
+        margin-bottom: 8px;
+    }
+    
+    .edition-description {
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    
+    .coming-soon-badge {
+        font-size: 16px;
+        padding: 4px 12px;
     }
 }
 
